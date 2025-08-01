@@ -36,3 +36,4 @@ obj-$(CONFIG_MTK_PERF_TRACKER) += perf_tracker.o
 obj-$(CONFIG_MTK_CORE_CTL) += rq_stats.o
 obj-$(CONFIG_MTK_CORE_CTL) += sched_avg.o
 obj-$(CONFIG_MTK_CORE_CTL) += core_ctl.o
+CFLAGS_perf_tracker.o := -Wno-error=strict-prototypes

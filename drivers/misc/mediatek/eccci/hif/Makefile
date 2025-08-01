@@ -36,3 +36,4 @@ ccci_hif_all-y += ccci_ringbuf.o ccci_hif_ccif.o
 
 endif
 
+CFLAGS_ccci_hif_dpmaif.o := -Wno-error=pointer-to-int-cast

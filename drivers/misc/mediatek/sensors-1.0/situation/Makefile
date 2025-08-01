@@ -17,3 +17,4 @@ obj-$(CONFIG_MTK_TILTDETECTHUB)				+=	tilt_detector/
 obj-$(CONFIG_MTK_FLAT_HUB)				+=	flat/
 obj-$(CONFIG_MTK_SAR_HUB)				+=	sar/
 obj-$(CONFIG_MOTO_ALGO)				+=	mot/
+CFLAGS_situation.o := -Wno-error=implicit-function-declaration
