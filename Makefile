@@ -5,6 +5,13 @@ SUBLEVEL = 191
 EXTRAVERSION =
 NAME = "People's Front"
 
+# Halium: suppress specific Clang warnings treated as errors
+ifeq ($(CONFIG_CC_IS_CLANG),y)
+	# Clang complains about cast to smaller integer type from pointer
+	KBUILD_CFLAGS += -Wno-error=pointer-to-int-cast
+endif
+
+
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
